@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { HousingLocationComponent } from '../housing-location/housing-location.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [ HousingLocationComponent ],
   template: `
     <section>
       <form>
@@ -12,6 +13,7 @@ import { Component } from '@angular/core';
       </form>
     </section>
     <section class="results">
+      <app-housing-location></app-housing-location>
     </section>
   `,
   styleUrl: './home.component.css'
