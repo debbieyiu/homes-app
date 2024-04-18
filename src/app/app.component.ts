@@ -4,7 +4,13 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   standalone: true,
   imports: [],
-  template: `<h1>Hello Universe!</h1>`,
+  template: `
+    <main>
+      <header class="brand-name">
+        <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true">
+      </header>
+    </main>
+  `,
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
