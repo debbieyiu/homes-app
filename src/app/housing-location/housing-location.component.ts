@@ -13,5 +13,5 @@ import { HousingLocation } from '../housing-location';
   styleUrl: './housing-location.component.css'
 })
 export class HousingLocationComponent {
-
+  @Input() housingLocation!: HousingLocation;
 }
