@@ -110,4 +110,8 @@ export class HousingService {
       laundry: true
     }
   ];
+
+  getAllHousingLocations(): HousingLocation[] {
+    return this.housingLocationList;
+  }
 }
